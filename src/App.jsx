@@ -77,7 +77,7 @@ function App() {
       const movies = await getTrendingMovies();
       setTrendingMovies(movies);
     } catch (error) {
-      // console.error(error);
+      console.error(error);
       setTrendingErrorMsg("Error fetching trending movies. Please try again later.");
     }
   };
